@@ -14,6 +14,7 @@ Software – Quartus prime
 
 **Full Adder and Full Subtractor**
 
+
 **Full Adder**
 
 Full adder is a digital circuit used to calculate the sum of three binary bits. It consists of three inputs and two outputs. Two of the input variables, denoted by A and B, represent the two significant bits to be added. The third input, Cin, represents the carry from the previous lower significant position. Two outputs are necessary because the arithmetic sum of three binary digits ranges in value from 0 to 3, and binary 2 or 3 needs two digits. The two outputs are sum and carry.
@@ -31,25 +32,44 @@ Carry = AB + ACin + BCin
 A full subtractor is a combinational circuit that performs subtraction involving three bits, namely minuend, subtrahend, and borrow-in . It accepts three inputs: minuend, subtrahend and a borrow bit and it produces two outputs: difference and borrow.
 
 ![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/02b24f51-ab51-4304-9ad6-7b81ffc1ead5)
-
+"C:\Users\admin\Desktop\DE LAB\exp 4\WhatsApp Image 2024-11-14 at 16.48.08_5317bd7c.jpg"
 Diff = A ⊕ B ⊕ Bin 
 
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
+![WhatsApp Image 2024-11-14 at 16 48 08_efb62d80](https://github.com/user-attachments/assets/db3f776d-a003-406e-8358-d699ce8b9913)
+
 
 **Procedure**
 
 Write the detailed procedure here
 
 **Program:**
+```
+module experiment4(df,bo,a,b,bin);
+output df;
+output bo;
+input a;
+input b;
+input bin;
+wire w1,w2,w3;
+assign w1=a^b;
+assign w2=(~a&b);
+assign w3=(~w1&bin);
+assign df=w1^bin;
+assign bo=w2|w3;
+endmodule
+```
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
 */
 
 **RTL Schematic**
+"C:\Users\admin\Pictures\Screenshots\Screenshot 2024-11-14 171218.png"
 
 **Output Timing Waveform**
+"C:\Users\admin\Pictures\Screenshots\Screenshot 2024-11-14 171547.png"
 
 **Result:**
 
