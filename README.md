@@ -39,6 +39,9 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 ![WhatsApp Image 2024-11-14 at 16 48 08_efb62d80](https://github.com/user-attachments/assets/db3f776d-a003-406e-8358-d699ce8b9913)
+![WhatsApp Image 2024-11-14 at 16 48 08_5317bd7c](https://github.com/user-attachments/assets/dc04c70c-e422-4619-863c-eb7b5b30720f)
+
+
 
 
 **Procedure**
@@ -66,10 +69,15 @@ endmodule
 */
 
 **RTL Schematic**
-"C:\Users\admin\Pictures\Screenshots\Screenshot 2024-11-14 171218.png"
+![exp4](https://github.com/user-attachments/assets/d819917e-eb62-4e4e-ae18-9d156866f565)
+
+
+
 
 **Output Timing Waveform**
-"C:\Users\admin\Pictures\Screenshots\Screenshot 2024-11-14 171547.png"
+![exp4 (2)](https://github.com/user-attachments/assets/f3574e3f-72d0-4c1d-b609-1c0d8e42729d)
+
+
 
 **Result:**
 
