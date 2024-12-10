@@ -51,21 +51,7 @@ Borrow out = A'Bin + A'B + BBin
 Write the detailed procedure here
 
 **Program:**
-```
-module experiment4(df,bo,a,b,bin);
-output df;
-output bo;
-input a;
-input b;
-input bin;
-wire w1,w2,w3;
-assign w1=a^b;
-assign w2=(~a&b);
-assign w3=(~w1&bin);
-assign df=w1^bin;
-assign bo=w2|w3;
-endmodule
-```
+
 ```
 module exp04(sum,cout,a,b,cin);
 output sum;
@@ -79,6 +65,21 @@ and(c1,a,b);
 xor(sum,s1,cin);
 and(c2,s1,cin);
 or(cout,c2,c1);
+endmodule
+```
+```
+module experiment4(df,bo,a,b,bin);
+output df;
+output bo;
+input a;
+input b;
+input bin;
+wire w1,w2,w3;
+assign w1=a^b;
+assign w2=(~a&b);
+assign w3=(~w1&bin);
+assign df=w1^bin;
+assign bo=w2|w3;
 endmodule
 ```
 
@@ -95,7 +96,7 @@ endmodule
 
 
 **Output Timing Waveform**
-![Screenshot 2024-12-10 114136](https://github.com/user-attachments/assets/27abe6b2-e509-49d8-bf7d-ed4793741aa5)
+![Screenshot 2024-12-10 121922](https://github.com/user-attachments/assets/bff88701-2a8f-4b50-8edf-6f45d273ae65)
 
 ![exp4 (2)](https://github.com/user-attachments/assets/f3574e3f-72d0-4c1d-b609-1c0d8e42729d)
 
